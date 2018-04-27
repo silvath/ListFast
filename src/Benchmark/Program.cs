@@ -7,7 +7,8 @@ namespace Benchmark
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<ListFastBenchmark>();
+            BenchmarkRunner.Run<ListFastAdd>();
+            BenchmarkRunner.Run<ListFastContains>();
             Console.ReadKey();
         }
     }
